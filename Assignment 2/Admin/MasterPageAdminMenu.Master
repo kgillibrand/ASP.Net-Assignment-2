@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPageAdminMenu.master.cs" Inherits="Assignment_2.MasterPageAdminMenu" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link runat="server" rel="shortcut icon" href="~/favicon.ico" type="image/x-icon"/>
+    <link runat="server" rel="icon" href="~/favicon.ico" type="image/ico"/>
+
+    <link runat ="server" href="~/CSS/w3.css" rel="Stylesheet" type="text/css" />
+    <link runat ="server" href="~/CSS/Main.css" rel="Stylesheet" type="text/css" />
+
+    <link runat = "server" href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'/>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+         <ul class="w3-navbar w3-black">
+            <li>Kieran's Student Technological Store!,&nbsp&nbsp&nbsp&nbsp</li>
+            <li>Kieran Gillibrand,&nbsp&nbsp&nbsp&nbsp</li>
+            <li>Email: Gill0332@algonquinlive.com,&nbsp&nbsp&nbsp&nbsp</li>
+            <li>Student: 040-756-866</li>
+        </ul>
+
+        <nav class="w3-sidenav w3-white" style="width:10%">
+            <asp:Label ID = "visited" runat = "server">
+            </asp:Label>
+
+            <br /> <br />
+
+            <asp:Label ID = "login" runat = "server">
+            </asp:Label>
+
+            <br /> <br />
+
+            <asp:GridView ID = "categories" runat = "server" EmptyDataText = "No Categories =(" AutoGenerateColumns = "false" Width = "150px">
+                <Columns>
+                    <asp:HyperLinkField DataTextField = "categoryName" HeaderText = "Categories" DataNavigateUrlFields = "categoryID" DataNavigateUrlFormatString = "~/Site/CategoryDetails.aspx?categoryID={0}"/>
+                </Columns>
+            </asp:GridView>
+
+            <br /> <br />
+
+            Directory <br />
+            <asp:BulletedList ID = "Directory" runat = "server" DisplayMode = "HyperLink" ToolTip = "Site Directory">
+            </asp:BulletedList>
+
+            <br /> <br />
+
+            <asp:Button ID = "logout" runat = "server" Text = "Log Out" OnClick = "logout_Click"/>
+        </nav>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

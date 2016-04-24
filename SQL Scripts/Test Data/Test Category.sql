@@ -1,0 +1,1 @@
+insert into categories (categoryName) values ('Test Category');

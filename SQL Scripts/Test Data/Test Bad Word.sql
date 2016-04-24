@@ -1,0 +1,1 @@
+insert into badWords (wordText) values ('Oracle');

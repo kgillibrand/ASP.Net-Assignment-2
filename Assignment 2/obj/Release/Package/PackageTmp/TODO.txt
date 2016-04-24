@@ -1,0 +1,52 @@
+﻿Database
+	- Users table (check new login requirements and update User object) (done)
+	- Categories table (done)
+	- Items table (links to categories) (done)
+	- Badwords table (done)
+
+General	
+	- Update User object (new login method) (done)
+	- Create login service (done)
+
+Classes
+	- Product (done)
+	- Cart (done)
+
+Misc
+	- Image Generic Handler (done)
+	- Azure BLOB setup (done)
+	- Global connection string constants (done)
+	 
+Pages
+	- Site
+		- MasterPage (done)
+		- Cart (done)
+		- CategoryDetails (done)
+		- Checkout (done)
+		- Default (done)
+		- Login (done)
+		- ProductDetails (done)
+		- ThankYou (done terribly)
+
+	- Admin
+		- Admin MasterPage (done)
+		- AddCategory (done)
+		- AddProduct (done)
+		- AdminDefault (done)
+		- BadWords (done)
+		- EditProduct (done)
+		- EditCategory (done)
+
+	Bugs
+		- Fix add to cart ultimate Bouba issue (done)
+
+	Tweaks
+		- CSS
+		- App Theme
+		- Fancy stuff (Bootstrap, W3c.css) (Look into bootstrap studio)
+		- Bonus features
+		- Double check routing (what links to what) (done)
+		- Double check login requirements for pages
+		- Double check security (validators, query string fuckery)
+		- Add error notice about posting comment whne not logged in instead of doing nothing (done redirects and then redirects back)
+		- Get average rating working (designer file label problem) (done)

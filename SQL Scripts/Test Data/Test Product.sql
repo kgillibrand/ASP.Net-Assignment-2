@@ -1,0 +1,1 @@
+insert into products (categoryID, productName, productShortDescription, productLongDescription, productPrice, productSalePrice, productOnSale, productImagePath) values (1, 'Test Product', 'Test Product with proper prices', 'Test Test', 1.99, 0.99, 1, 'No Image');
